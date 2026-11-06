@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark"> <!-- He forzado el tema oscuro aquí como base para el formulario -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cuenta - AmiSiSi</title>
+  
+  <link rel="stylesheet" href="scss/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-body">
+
+  <!-- NAVBAR -->
+  <div class="sticky-top bg-body">
+    <nav class="navbar navbar-expand-md py-3 border-bottom border-secondary">
+      <div class="container-fluid px-4 align-items-center">
+        
+        <a class="navbar-brand custom-font display-4 m-0 me-md-5 text-body lh-1 logo-principal" href="index.html">AmiSiSi</a>
+        
+        <div class="d-flex flex-grow-1 align-items-center justify-content-end">
+          <div class="d-flex align-items-center gap-4">
+            
+            <button id="theme-toggle" class="btn btn-outline-secondary btn-sm d-none d-md-block text-nowrap">Modo Oscuro</button>
+
+            <!-- ENLACE AL CARRITO -->
+            <a href="carrito.html" class="text-body fs-4 text-decoration-none"><i class="bi bi-cart2"></i></a>
+            
+            <!-- ENLACE AL FORMULARIO -->
+            <a href="formulario.html" class="text-body fs-4 text-decoration-none">
+              <i class="bi bi-person"></i>
+            </a>
+            
+            <button class="navbar-toggler border-0 d-block px-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
+              <span class="navbar-toggler-icon fs-4"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- SECCIÓN PRINCIPAL: FORMULARIO (Diseño Restaurado) -->
+  <main class="container-fluid px-4 px-md-5 py-5 min-vh-100 d-flex justify-content-center align-items-start pt-5 bg-body">
+    
+    <!-- Tarjeta del formulario con el color azul del mockup -->
+    <div class="w-100 p-4 p-md-5 rounded-2 border border-secondary mt-4" style="max-width: 480px; background-color: #3b5c7d;">
+      
+      <!-- Título h1 para cumplir con el W3C y fuente Milky -->
+      <h1 class="custom-font text-white text-center mb-3" style="font-size: 3rem;">Mi Cuenta</h1>
+      
+      <!-- Línea separadora sutil -->
+      <hr class="text-white opacity-50 mb-4 border-2">
+      
+      <form>
+        <!-- Input Nombre -->
+        <div class="mb-4">
+          <label for="nombreInput" class="form-label text-white fs-5">Nombre:</label>
+          <input type="text" class="form-control text-white shadow-none border-secondary" id="nombreInput" style="background-color: #2b2c30; border-radius: 6px; height: 45px;" required>
+        </div>
+        
+        <!-- Input Email -->
+        <div class="mb-5">
+          <label for="emailInput" class="form-label text-white fs-5">Email:</label>
+          <input type="email" class="form-control text-white shadow-none border-secondary" id="emailInput" style="background-color: #2b2c30; border-radius: 6px; height: 45px;" required>
+        </div>
+        
+        <!-- Botón Iniciar Sesión estilo Pill -->
+        <button type="submit" class="btn w-100 fw-bold text-white rounded-pill py-2 mb-4 fs-5 border-0 shadow-sm" style="background-color: #222222; letter-spacing: 0.5px;">
+          INICIAR SESIÓN
+        </button>
+        
+        <!-- Enlace registro -->
+        <div class="text-center mt-2">
+          <a href="#" class="text-white text-decoration-underline" style="font-size: 0.95rem;">¿No tienes cuenta? Regístrate</a>
+        </div>
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- MENÚ LATERAL OFFCANVAS (CORREGIDO PARA W3C CON ROLE="DIALOG") -->
+  <div class="offcanvas offcanvas-end text-bg-body" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel" role="dialog">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h1 class="offcanvas-title fs-3 text-body" id="menuOffcanvasLabel">AmiSiSi</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column p-0">
+      <ul class="navbar-nav fs-5 w-100">
+        <li class="nav-item border-bottom border-secondary-subtle">
+          <a class="nav-link px-4 py-3 d-flex align-items-center gap-2" href="index.html">
+            <i class="bi bi-house"></i> Inicio
+          </a>
+        </li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Colaboraciones</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Otoño</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Invierno</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Primavera</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Verano</a></li>
+      </ul>
+      
+      <div class="mt-auto w-100 border-top border-secondary">
+        <ul class="navbar-nav fs-5 w-100">
+          <li class="nav-item border-bottom border-secondary-subtle">
+            <a class="nav-link px-4 py-3 d-flex align-items-center gap-2" href="formulario.html">
+              <i class="bi bi-person"></i> Mi Cuenta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 py-3 text-danger d-flex align-items-center gap-2 fw-semibold" href="#">
+              <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+            </a>
+          </li>
+        </ul>
+        <div class="px-4 pb-4 pt-3 d-md-none">
+          <button id="theme-toggle-mobile" class="btn btn-outline-secondary w-100">🌙 Modo Oscuro</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

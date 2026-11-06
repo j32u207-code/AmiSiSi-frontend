@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - AmiSiSi</title>
+  
+  <link rel="stylesheet" href="scss/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Estilo directo para asegurar el fondo crema en modo claro -->
+  <style>
+    [data-bs-theme="light"] body,
+    [data-bs-theme="light"] .bg-body,
+    [data-bs-theme="light"] .sticky-top {
+      background-color: #FDF9EF !important;
+    }
+  </style>
+</head>
+<body class="bg-body">
+
+  <!-- NAVBAR -->
+  <div class="sticky-top bg-body">
+    <nav class="navbar navbar-expand-md py-3 border-bottom border-secondary">
+      <div class="container-fluid px-4 align-items-center">
+        
+        <!-- CORRECCIÓN 1: Sustituido el h1 por un a -->
+        <a class="navbar-brand custom-font display-4 m-0 me-md-5 text-body lh-1 logo-principal" href="index.html">AmiSiSi</a>
+        
+        <div class="d-flex flex-grow-1 align-items-center justify-content-end">
+          <div class="d-flex align-items-center gap-4">
+            
+            <button id="theme-toggle" class="btn btn-outline-secondary btn-sm d-none d-md-block text-nowrap">Modo Oscuro</button>
+
+            <!-- ENLACE AL CARRITO -->
+            <a href="carrito.html" class="text-body fs-4 text-decoration-none"><i class="bi bi-cart2"></i></a>
+            
+            <!-- ENLACE AL FORMULARIO -->
+<a href="formulario.html" class="text-body fs-4 text-decoration-none">
+  <i class="bi bi-person"></i>
+</a>
+            
+            <button class="navbar-toggler border-0 d-block px-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
+              <span class="navbar-toggler-icon fs-4"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- SECCIÓN PRINCIPAL: CARRITO -->
+  <main class="container-fluid px-4 px-md-5 py-4 min-vh-100 bg-body">
+    
+    <div class="row mb-4 border-bottom border-secondary pb-2">
+      <div class="col-12">
+        <h1 class="custom-font m-0 display-5 text-body">Carrito</h1>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="col-12 col-lg-7">
+        
+        <!-- PRODUCTO 1 -->
+        <div class="d-flex flex-column flex-sm-row gap-4 mb-4 border-bottom border-secondary-subtle pb-4">
+          <div class="p-3 bg-secondary-subtle" style="width: 200px; height: 200px;">
+            <img src="img/pantalon2.png" alt="Pantalon chandal baggy" class="img-fluid h-100 object-fit-cover w-100" onerror="this.src='https://via.placeholder.com/200'">
+          </div>
+          <div class="d-flex flex-column justify-content-between">
+            
+            <!-- CORRECCIÓN 2 y 3: Separado el checkbox del título y el h3 cambiado a h2 -->
+            <div class="d-flex gap-3 align-items-center m-0">
+              <h2 class="custom-font fs-2 text-body m-0">
+                Pantalon chandal baggy <span>21.99€</span>
+              </h2>
+              <div class="form-check m-0 ms-2 d-flex align-items-center">
+                <input class="form-check-input border-secondary m-0" type="checkbox" checked style="background-color: #7b5eea;">
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center gap-4 mt-3">
+              <span class="custom-font fs-3 text-body">x1</span>
+              <div class="input-group input-group-sm rounded-pill overflow-hidden bg-body-secondary border border-secondary-subtle" style="width: 100px;">
+                <button class="btn btn-sm border-0 px-3 fw-bold text-body hover-overlay" type="button">-</button>
+                <div class="border-start border-secondary-subtle my-1"></div>
+                <button class="btn btn-sm border-0 px-3 fw-bold text-body hover-overlay" type="button">+</button>
+              </div>
+            </div>
+            <p class="fw-semibold fs-5 text-body m-0 mt-3">TALLA: M</p>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="d-flex flex-column flex-sm-row gap-4 mb-4 border-bottom border-secondary-subtle pb-4">
+          <div class="p-3 bg-secondary-subtle" style="width: 200px; height: 200px;">
+            <img src="img/top.png" alt="Camiseta retro Brasil" class="img-fluid h-100 object-fit-cover w-100" onerror="this.src='https://via.placeholder.com/200'">
+          </div>
+          <div class="d-flex flex-column justify-content-between">
+            
+            <!-- CORRECCIÓN 2 y 3 aplicadas -->
+            <div class="d-flex gap-3 align-items-center m-0">
+              <h2 class="custom-font fs-2 text-body m-0">
+                Camiseta retro Brasil <span>13.99€</span>
+              </h2>
+              <div class="form-check m-0 ms-2 d-flex align-items-center">
+                <input class="form-check-input border-secondary m-0" type="checkbox" checked style="background-color: #7b5eea;">
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center gap-4 mt-3">
+              <span class="custom-font fs-3 text-body">x1</span>
+              <div class="input-group input-group-sm rounded-pill overflow-hidden bg-body-secondary border border-secondary-subtle" style="width: 100px;">
+                <button class="btn btn-sm border-0 px-3 fw-bold text-body hover-overlay" type="button">-</button>
+                <div class="border-start border-secondary-subtle my-1"></div>
+                <button class="btn btn-sm border-0 px-3 fw-bold text-body hover-overlay" type="button">+</button>
+              </div>
+            </div>
+            <p class="fw-semibold fs-5 text-body m-0 mt-3">TALLA: L</p>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="d-flex flex-column flex-sm-row gap-4 mb-4">
+          <div class="p-3 bg-secondary-subtle" style="width: 200px; height: 200px;">
+            <img src="img/sudadera2.png" alt="Sudadera Cavolo" class="img-fluid h-100 object-fit-cover w-100" onerror="this.src='https://via.placeholder.com/200'">
+          </div>
+          <div class="d-flex flex-column justify-content-between">
+            
+            <!-- CORRECCIÓN 2 y 3 aplicadas -->
+            <div class="d-flex gap-3 align-items-center m-0">
+              <h2 class="custom-font fs-2 text-body m-0">
+                Sudadera <span>54.99€</span>
+              </h2>
+              <div class="form-check m-0 ms-2 d-flex align-items-center">
+                <input class="form-check-input border-secondary m-0" type="checkbox" checked style="background-color: #7b5eea;">
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center gap-4 mt-3">
+              <span class="custom-font fs-3 text-body">x1</span>
+              <div class="input-group input-group-sm rounded-pill overflow-hidden bg-body-secondary border border-secondary-subtle" style="width: 100px;">
+                <button class="btn btn-sm border-0 px-3 fw-bold text-body hover-overlay" type="button">-</button>
+                <div class="border-start border-secondary-subtle my-1"></div>
+                <button class="btn btn-sm border-0 px-3 fw-bold text-body hover-overlay" type="button">+</button>
+              </div>
+            </div>
+            <p class="fw-semibold fs-5 text-body m-0 mt-3">TALLA: XL</p>
+          </div>
+        </div>
+        
+        <div class="mt-5 border-top border-secondary pt-3">
+          <p class="fw-bold fs-5 text-body m-0">TOTAL: 90.97€</p>
+          <p class="fw-bold fs-5 text-body m-0">DESCUENTO APLICADO: 0€</p>
+        </div>
+
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="col-12 col-lg-5">
+        <div class="mb-5">
+          <label for="codigoPromocional" class="custom-font fs-3 text-body mb-2 d-block">CODIGO PROMOCIONAL</label>
+          <input type="text" id="codigoPromocional" class="form-control bg-secondary-subtle border-0 rounded-0 mb-4 text-body" style="height: 30px;" aria-label="Código Promocional">
+          
+          <label for="ticketRegalo" class="custom-font fs-3 text-body mb-2 d-block">TICKET REGALO</label>
+          <input type="text" id="ticketRegalo" class="form-control bg-secondary-subtle border-0 rounded-0 mb-5 text-body" style="height: 30px;" aria-label="Ticket Regalo">
+        </div>
+
+        <div>
+          <!-- Cambiado de h3 a h2 para respetar jerarquía -->
+          <h2 class="custom-font display-6 text-body text-center mb-4">Podria Gustarte</h2>
+          
+          <div class="row g-3 justify-content-center">
+            
+            <div class="col-6 text-center">
+              <div class="p-3 mb-2 bg-secondary-subtle w-100 d-flex justify-content-center align-items-center rounded">
+                <img src="img/sudadera.png" alt="Cortavientos negro" class="img-fluid object-fit-contain" style="max-height: 280px;" onerror="this.src='https://via.placeholder.com/150'">
+              </div>
+              <p class="custom-font fs-3 text-body m-0 lh-1">Cortavientos negro 19.99€</p>
+            </div>
+            
+            <div class="col-6 text-center">
+              <div class="p-3 mb-2 bg-secondary-subtle w-100 d-flex justify-content-center align-items-center rounded">
+                <img src="img/polo.png" alt="Polo The Champios" class="img-fluid object-fit-contain" style="max-height: 280px;" onerror="this.src='https://via.placeholder.com/150'">
+              </div>
+              <p class="custom-font fs-3 text-body m-0 lh-1">Polo The Champios 29.99€</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-body border-top border-secondary py-5 mt-5">
+    <div class="container-fluid px-4 px-md-5">
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-3">
+          <div class="d-flex gap-3 mb-4 fs-4 text-body">
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <h2 class="custom-font display-5 text-body m-0">AmiSiSi</h2>
+        </div>
+        
+        <!-- CORRECCIÓN 4: Cambiados los h6 por h3 con clase fs-6 para mantener diseño y respetar jerarquía -->
+        <div class="col-12 col-md-3">
+          <h3 class="fw-bold mb-3 text-body fs-6">AYUDA</h3>
+          <ul class="list-unstyled text-body-secondary" style="font-size: 0.9rem;">
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Comprar Online</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Pagos</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Envíos y Seguimiento de Pedido</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Devoluciones</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Tarjeta Regalo</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-12 col-md-3">
+          <h3 class="fw-bold mb-3 text-body fs-6">SOBRE NOSOTROS</h3>
+          <ul class="list-unstyled text-body-secondary" style="font-size: 0.9rem;">
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Sobre AmiSiSi</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Trabaja con nosotros</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Nuestras Tiendas</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-12 col-md-3">
+          <h3 class="fw-bold mb-3 text-body fs-6">TE PUEDE INTERESAR</h3>
+          <ul class="list-unstyled text-body-secondary" style="font-size: 0.9rem;">
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Sudaderas Hombre</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Jeans Mujer</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Vestidos Mujer</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Zapatos Hombre</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-body-secondary">Camisetas hombre</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- CORRECCIÓN 5: Añadido role="dialog" -->
+  <div class="offcanvas offcanvas-end text-bg-body" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel" role="dialog">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <!-- Cambiado el título del offcanvas a h2 -->
+      <h2 class="offcanvas-title fs-3 text-body" id="menuOffcanvasLabel">AmiSiSi</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column p-0">
+      <ul class="navbar-nav fs-5 w-100">
+        <li class="nav-item border-bottom border-secondary-subtle">
+          <a class="nav-link px-4 py-3 d-flex align-items-center gap-2" href="index.html">
+            <i class="bi bi-house"></i> Inicio
+          </a>
+        </li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Colaboraciones</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Otoño</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Invierno</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Primavera</a></li>
+        <li class="nav-item border-bottom border-secondary-subtle"><a class="nav-link px-4 py-3" href="#">Prendas Verano</a></li>
+      </ul>
+      
+      <div class="mt-auto w-100 border-top border-secondary">
+        <ul class="navbar-nav fs-5 w-100">
+          <li class="nav-item border-bottom border-secondary-subtle">
+            <a class="nav-link px-4 py-3 d-flex align-items-center gap-2" href="formulario.html">
+              <i class="bi bi-person"></i> Mi Cuenta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 py-3 text-danger d-flex align-items-center gap-2 fw-semibold" href="#">
+              <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+            </a>
+          </li>
+        </ul>
+        <div class="px-4 pb-4 pt-3 d-md-none">
+          <button id="theme-toggle-mobile" class="btn btn-outline-secondary w-100">🌙 Modo Oscuro</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
