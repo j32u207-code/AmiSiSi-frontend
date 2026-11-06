@@ -35,12 +35,15 @@ El código fuente ha sido refactorizado y validado mediante las herramientas ofi
 Se han validado independientemente las tres vistas principales del proyecto, obteniendo 0 errores en todas ellas:
 
 **1. Página de Inicio (index.html)**
+
 ![Validación Index](img/validacion-index.png)
 
 **2. Página del Carrito (carrito.html)**
+
 ![Validación Carrito](img/validacion-carrito.png)
 
 **3. Página de Usuario (formulario.html)**
+
 ![Validación Formulario](img/validacion-formulario.png)
 
 ### Validación CSS
