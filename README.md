@@ -10,20 +10,22 @@ Este repositorio contiene la maquetación front-end del e-commerce **AmiSiSi**, 
 
 ##  Estructura del Proyecto
 El repositorio sigue la estructura requerida:
-* `index.html`, `carrito.html`, `formulario.html`: Archivos principales con la estructura semántica.
-* `/scss/`: Directorio que contiene la arquitectura modular de Sass y las variables de diseño.
-* `/css/`: Directorio que contiene el archivo `custom.css` final compilado y minificado.
-* `/js/`: Scripts funcionales básicos.
-* `/img/`: Assets gráficos e imágenes del proyecto.
+* `/src/index.html`, `/src/carrito.html`, `/src/formulario.html`: Archivos principales con la estructura semántica.
+* `/src/scss/`: Directorio que contiene la arquitectura modular de Sass y las variables de diseño.
+* `/src/css/`: Directorio que contiene el archivo `custom.css` final compilado y minificado.
+* `/src/js/`: Scripts funcionales básicos.
+* `/src/media/img/`: Assets gráficos e imágenes del proyecto.
+* `/src/media/audio/` y `/src/media/video/`: Recursos multimedia adicionales.
+* `/media-bruto/`: Archivos fuente originales antes de optimizarlos para producción.
 
 ##  Instrucciones para Compilar Sass
 El proyecto está configurado para compilarse fácilmente. Si otro desarrollador necesita hacer cambios en los estilos, debe seguir estos pasos:
 
 1. Abrir el proyecto en **Visual Studio Code**.
 2. Instalar la extensión **Live Sass Compiler** (de Glenn Marks).
-3. Abrir la carpeta `/scss` y realizar los cambios necesarios en el archivo `custom.scss` o sus parciales.
+3. Abrir la carpeta `/src/scss` y realizar los cambios necesarios en el archivo `custom.scss` o sus parciales.
 4. Hacer clic en el botón **"Watch Sass"** situado en la barra de estado inferior de VS Code.
-5. La extensión compilará automáticamente el código y actualizará el archivo final en `/css/custom.css`.
+5. Configurar la compilación para actualizar `/src/css/custom.css`.
 
 ##  Tematización (Modo Oscuro)
 La interfaz soporta un cambio de tema dinámico. A través de un script JS enlazado al botón de la barra de navegación, se alterna el atributo `data-bs-theme="dark/light"` en la etiqueta HTML. Los estilos de Sass están configurados para responder a este atributo y cambiar de forma fluida el color de fondo, tipografías y contenedores translúcidos (efecto glassmorphism).
@@ -36,17 +38,17 @@ Se han validado independientemente las tres vistas principales del proyecto, obt
 
 **1. Página de Inicio (index.html)**
 
-![Validación Index](img/validacion-index.png)
+![Validación Index](src/media/img/validacion-index.png)
 
 **2. Página del Carrito (carrito.html)**
 
-![Validación Carrito](img/validacion-carrito.png)
+![Validación Carrito](src/media/img/validacion-carrito.png)
 
 **3. Página de Usuario (formulario.html)**
 
-![Validación Formulario](img/validacion-formulario.png)
+![Validación Formulario](src/media/img/validacion-formulario.png)
 
 ### Validación CSS
 La hoja de estilos compilada final también ha sido validada sin errores:
 
-![Validación CSS W3C](img/validacion-css.png)
+![Validación CSS W3C](src/media/img/validacion-css.png)
